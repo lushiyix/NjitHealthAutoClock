@@ -1,0 +1,177 @@
+debug: false
+# 邮箱API的地址
+emailApiUrl: http://mail.ruoli.cc/api/sendMail
+
+#用户组配置
+##################################################
+# 温馨提示：请仔细注意每个模板是属于哪个任务类型的配置！##
+##################################################
+users:
+
+  # 第一个用户配置
+  # 以下配置为签到
+  # 这里默认仅适配南京工程学院，其他学校自行修改
+  - user:
+      # 任务类型（收集：0、签到：1、查寝：2、打卡：3）
+      type: 3
+      # username 学号或者工号
+      username: ''
+      # password 密码
+      password: ''
+      # address 地址，定位信息
+      address: '江苏省南京市江宁区南京工程学院'
+      # school 学校全称
+      schoolName: '南京工程学院'
+      # phtoneNumber 联系方式
+      phtoneNumber: ''
+      # 是否检查表单的标题（1代表检查，0代表不检查）
+      checkTitle: 0
+
+      # 姓名
+      name: ''
+      # 所在院
+      deptName: '计算机工程学院'
+      # 所在院编号，不同院编号不同，不知道可先进入AutoClock.start()操作
+      deptCode: '40070'
+      # 是否开启qq邮箱通知功能
+      isNoticeOpen: true
+      # 是否发送qq邮箱通知签到成功消息
+      isNotice: true
+      # email 接受通知消息的邮箱（qq邮箱）xxx@qq.com
+      email: ''
+
+      # 表单信息
+      forms:
+        - form:
+            # {'001':'校内', '002':'南京市', '003':'江苏省内', '004':'江苏省外'}
+            title: 今日所在位置
+            value: '001'
+        - form:
+            # {'001':'未接种', '002':'已接种'}
+            title: 疫苗接种情况
+            value: '002'
+        - form:
+            # {'001':'发热', '002':'干咳' ...... '011': '无以上状况'}
+            title: 今日身体状况
+            value: '011'
+        - form:
+            # {'001':'36℃及以下', '002':'36.1℃ - 36.5℃' ...... '005': '37.3℃及以上'}
+            title: 今日体温
+            value: '002'
+        - form:
+            # {'001':'绿码', '002':'红码'}
+            title: 今日健康码
+            value: '001'
+        - form:
+            # {'001':'未隔离', ...... '004': '单位隔离'}
+            title: 今日隔离情况
+            value: '001'
+        - form:
+            # {'001':'无', ...... '004': '境外'}
+            title: 中高风险地区行程史、密切接触史
+            value: '001'
+
+  - user:
+      # 任务类型（收集：0、签到：1、查寝：2、打卡：3）
+      type: 3
+      # username 学号或者工号
+      username: ''
+      # password 密码
+      password: ''
+      # address 地址，定位信息
+      address: '江苏省南京市江宁区南京工程学院'
+      # school 学校全称
+      schoolName: '南京工程学院'
+      # phtoneNumber 联系方式
+      phtoneNumber: ''
+      # 是否检查表单的标题（1代表检查，0代表不检查）
+      checkTitle: 0
+
+      # 姓名
+      name: ''
+      # 所在院
+      deptName: '计算机工程学院'
+      # 所在院编号
+      deptCode: '40070'
+      # 是否开启qq邮箱通知功能
+      isNoticeOpen: false
+      # 是否发送qq邮箱通知签到成功消息
+      isNotice: false
+      # email 接受通知消息的邮箱（qq邮箱）xxx@qq.com
+      email: ''
+
+      # 表单信息
+      forms:
+        - form:
+            title: 今日所在位置
+            value: '001'
+        - form:
+            title: 疫苗接种情况
+            value: '002'
+        - form:
+            title: 今日身体状况
+            value: '011'
+        - form:
+            title: 今日体温
+            value: '002'
+        - form:
+            title: 今日健康码
+            value: '001'
+        - form:
+            title: 今日隔离情况
+            value: '001'
+        - form:
+            title: 中高风险地区行程史、密切接触史
+            value: '001'
+  - user:
+      # 任务类型（收集：0、签到：1、查寝：2、打卡：3）
+      type: 3
+      # username 学号或者工号
+      username: ''
+      # password 密码
+      password: ''
+      # address 地址，定位信息
+      address: '江苏省南京市江宁区南京工程学院'
+      # school 学校全称
+      schoolName: '南京工程学院'
+      # phtoneNumber 联系方式
+      phtoneNumber: ''
+      # 是否检查表单的标题（1代表检查，0代表不检查）
+      checkTitle: 0
+
+      # 姓名
+      name: ''
+      # 所在院
+      deptName: '计算机工程学院'
+      # 所在院编号
+      deptCode: '40070'
+      # 是否开启qq邮箱通知功能
+      isNoticeOpen: false
+      # 是否发送qq邮箱通知签到成功消息
+      isNotice: false
+      # email 接受通知消息的邮箱（qq邮箱）xxx@qq.com
+      email: ''
+
+      # 表单信息
+      forms:
+        - form:
+            title: 今日所在位置
+            value: '001'
+        - form:
+            title: 疫苗接种情况
+            value: '002'
+        - form:
+            title: 今日身体状况
+            value: '011'
+        - form:
+            title: 今日体温
+            value: '002'
+        - form:
+            title: 今日健康码
+            value: '001'
+        - form:
+            title: 今日隔离情况
+            value: '001'
+        - form:
+            title: 中高风险地区行程史、密切接触史
+            value: '001'
