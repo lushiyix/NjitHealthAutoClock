@@ -41,6 +41,7 @@ class AutoClock:
         self.userName = self.userInfo['name']
         self.deptCode = self.userInfo['deptCode']
         self.deptName = self.userInfo['deptName']
+        self.StuAccommodationInfo = self.userInfo['StuAccommodationInfo']
 
     # 获取时间
     def getFillTime(self):
@@ -55,6 +56,7 @@ class AutoClock:
         self.form['USER_NAME'] = self.userName
         self.form['DEPT_CODE'] = self.deptCode
         self.form['DEPT_NAME'] = self.deptName
+        self.form['BY2'] = self.StuAccommodationInfo
         self.form['BY3'] = '002' if self.hour >= 12 else '001'
         self.form['PHONE_NUMBER'] = self.userInfo['phtoneNumber']
         self.form['CLOCK_SITUATION'] = self.userInfo['address']

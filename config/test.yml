@@ -22,8 +22,6 @@ users:
       address: '江苏省南京市江宁区南京工程学院'
       # school 学校全称
       schoolName: '南京工程学院'
-      # phtoneNumber 联系方式
-      phtoneNumber: ''
       # 是否检查表单的标题（1代表检查，0代表不检查）
       checkTitle: 0
 
@@ -31,14 +29,19 @@ users:
       name: ''
       # 所在院
       deptName: '计算机工程学院'
-      # 所在院编号
+      # 所在院编号，不同院编号不同，不知道可先进入AutoClock.start()操作
       deptCode: '40070'
       # 是否开启qq邮箱通知功能
-      isNoticeOpen: false
+      isNoticeOpen: true
       # 是否发送qq邮箱通知签到成功消息
-      isNotice: false
+      isNotice: true
       # email 接受通知消息的邮箱（qq邮箱）xxx@qq.com
       email: ''
+      # phtoneNumber 联系方式
+      phtoneNumber: ''
+      # 学生住宿信息
+      # {‘001’:'走读', '002':'东1', '012':'东11', '013':'北1', '022':'北10'}
+      StuAccommodationInfo: ''
 
       # 表单信息
       forms:
